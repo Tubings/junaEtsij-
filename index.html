@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body onload="aktiivisetJunat()">
+    <h1 id=headeri>Junan etsijä!</h1>
+    <!-- Luodaan formi tiedon syöttöä varten -->
+    <form>
+        <input type="text" id="juna" min="0" placeholder="Junan numero"></br>
+        <input type="button" id="lähetä" value="lähetä">
+    </form>
+</br></br></br></br>
+<!-- Luodaan div google mapsin api varten -->
+    <div id= "map"></div></br></br></br></br>
+    <h4>Aktiivisten junien numerot</h4>
+    <div id="testi"></div>
+<!-- Linkataan scriptit -->
+    <script src="scripts.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFFbyG0U01RiiS861nQR5fgh3RFREwpNk&callback=initMap&libraries=&v=weekly"
+    async
+    ></script>
+</body>
+</html>
